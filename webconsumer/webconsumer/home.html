@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.5.1.js"></script>
+    <script>
+        $(function () {
+            $.ajax({
+                url: 'http://localhost:49865/api/TbNews',
+                method: 'GET',
+                success: function (data) {
+
+                    var table = document.createElement('table');
+                    var th = document.createElement('th');
+                    var tr = document.createElement('tr');
+                    var thed = document.createElement('thead');
+                    var tbody = document.createElement('tbody');
+
+                    //table.border = '1';
+
+                    th.appendChild(document.createTextNode("title"));
+                    th.appendChild(document.createTextNode("pref"));
+                    th.appendChild(document.createTextNode("description"));
+                    th.appendChild(document.createTextNode("date"));
+                    th.appendChild(document.createTextNode("Catalog_id"));
+                    tr.appendChild(th);
+                    thed.appendChild(tr)
+                    table.appendChild(thed);
+
+                    var q = JSON.stringify(data);
+                    var m = JSON.parse(q);
+                    console.log(m.length);
+
+                    for (var i in m) {
+                        var tr = document.createElement('tr');
+
+                        var td = document.createElement('td');
+
+                        td.appendChild(document.createTextNode(m[i]["title"]));
+                        td.appendChild(document.createTextNode(m[i]["pref"]));
+                        td.appendChild(document.createTextNode(m[i]["description"]));
+                        td.appendChild(document.createTextNode(m[i]["date"]));
+                        td.appendChild(document.createTextNode(m[i]["Catalog_id"]));
+                        tr.appendChild(td);
+                        tbody.appendChild(tr)
+                        table.appendChild(tbody);
+                    }
+                    table.style = " border: 1px solid black; margin:auto;width:50%";
+
+                    document.body.appendChild(table);
+                },
+                error: function () {
+                    alert("error");
+                }
+            })
+        });
+        function add() {
+            var o = {
+                id: 0,
+                title: $("#title").val(),
+                pref: $("#pref").val(),
+                description: $("#description").val(),
+                date: $("#date").val(),
+                Catalog_id: 2
+            }
+            $.ajax({
+                url: 'http://localhost:49865/api/TbNews',
+                method: 'POST',
+                date: JSON.stringify(o),
+                contentType: 'application/json',
+                success: function (data) {
+                    alert(JSON.stringify(data));
+                },
+                error: function (er) {
+                    alert(er.statusText);
+                }
+            })
+        }
+
+    </script>
+</head>
+<body>
+    Title : <input type="text" id="title" /><br />
+    Pref : <input type="text" id="pref" /><br />
+    Description : <input type="text" id="description" /><br />
+    Date : <input type="text" id="date" /><br />
+    Catalog_id : <input type="text" id="catalog_id" /><br />
+  <input type="button" onclick="add()" value="Add" />
+    
+</body>
+</html>

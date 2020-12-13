@@ -1,0 +1,16 @@
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\APIconsumerapp.exe.config
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\APIconsumerapp.exe
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\APIconsumerapp.pdb
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\Newtonsoft.Json.dll
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\System.Net.Http.Formatting.dll
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\Newtonsoft.Json.xml
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\bin\Debug\System.Net.Http.Formatting.xml
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.csprojAssemblyReference.cache
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.Form1.resources
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.Properties.Resources.resources
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.csproj.GenerateResource.cache
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.csproj.CoreCompileInputs.cache
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.csproj.CopyComplete
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.exe
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.pdb
+F:\ITI\API\2\Lab_Day2_API\APIconsumerapp\APIconsumerapp\obj\Debug\APIconsumerapp.Form2.resources
